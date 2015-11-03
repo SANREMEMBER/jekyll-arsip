@@ -6,7 +6,7 @@ A plugin for Jekyll to easily embed [Archive.org](https://arvhive.org) videos, a
 > Based on [Easy Youtube Embed for Jekyll](https://github.com/pibby/jekyll-youtube) by [Katie Harron](https://pibby.com/)
 
 ## Demo
-[Jekyll Archive.org Plugin](https://tarteka/2015/11/insertar-audios-y-vdeos-de-archiveorg-en-jekyll/)
+[Jekyll Archive.org Plugin](https://tarteka.net/2015/11/insertar-audios-y-vdeos-de-archiveorg-en-jekyll/)
 
 ## Installation Instructions
 Download the file `archive.rb` and place it in your `_plugins` folder of your Jekyll installation.
