@@ -76,7 +76,9 @@ module Jekyll
 
     def render(context)
       source = "<div class=\"audio\">"
+      source += "<figure>"
       source += "<iframe width=\"640\" height=\"30\" src=\"//archive.org/embed/#{@url}\" frameborder=\"0\" allowfullscreen webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>"
+      source += "</figure>"
       source += "</div>"
       source
     end
@@ -115,7 +117,7 @@ module Jekyll
 
   def render(context)
 
-    archive = "https://archive.org/download"
+    archive = "//archive.org/download"
     input_split = split_params(@input)    
     img_path = input_split[0].strip.downcase
 
