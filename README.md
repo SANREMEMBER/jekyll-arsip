@@ -47,30 +47,3 @@ Contoh daftar audio, `{% arsip_daftar KajianPetanahan20160424 %}` akan di *rende
   </figure>
 </div>
 ```
-
----
-
-Jika Anda tertarik untuk menambahkan CSS, Anda dapat menambahkan gaya berikut, agar ukuran video menjadi responsif untuk perangkat seluler.
-
-```css
-/* responsive videos */
-.video figure {
-	position: relative;
-	nowhitespace: afterproperty;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-}
-
-.video iframe, .video object, .video embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.audio iframe, .audio object, .audio embed {
-  width: 100%;
-}
-```
