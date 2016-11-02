@@ -1,3 +1,4 @@
+# coding: utf-8
 # Jekyll - Easy Archive.org Embed
 #
 # Una forma sencilla de insertar vídeos, audios y listas de audios de Archive.org
@@ -101,8 +102,31 @@ module Jekyll
       source
     end
   end
+
+
+  class Archive_image < Liquid::Tag
+    @url = nil
+    @page_title = ![{{page.title}}]
+
+    IMAGE_URL = /(\S+)/i
+
+    def initialize(tag_name, markup, tokens)
+      super
+
+      if markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    
+    def render(context)
+      source = "#{@page_title}(https://archive.org/download/#{@url})"
+      source
+    end
+  end
+
 end
 
 Liquid::Template.register_tag('archive_video', Jekyll::Archive_video)
 Liquid::Template.register_tag('archive_audio', Jekyll::Archive_audio)
 Liquid::Template.register_tag('archive_list', Jekyll::Archive_list)
+Liquid::Template.register_tag('archive_image', Jekyll::Archive_image)
