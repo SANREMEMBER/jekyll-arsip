@@ -1,17 +1,19 @@
 # coding: utf-8
-# Jekyll - Easy Archive.org Embed
+# Jekyll Arsip - Cara Mudah Sematkan Berkas dari Archive.org
 #
-# Una forma sencilla de insertar vídeos, audios y listas de audios de Archive.org
-# Un fork basado en "Easy Youtube Embed" de Katie Harron - https://github.com/pibby
+# Sematkan berbagai berkas video, audio, daftar audio, bahkan gambar dari Internet Archive secara mudah.
+# "jekyll-arsip" dibuat berdasarkan "jekyll-archive-org" yang dibuat oleh Tarteka - https://github.com/tarteka
+# "jekyll-archive-org" dibuat berdasarkan "jekyll-youtube" oleh Katie Harron - https://github.com/pibby
 #
-#   Uso:
-#     Insertar un vídeo: {% archive_video VIDEO_ID %}
-#     Insertar un audio: {% archive_audio AUDIO_ID %}
-#     Insertar una lista de audio: {% archive_list AUDIO_LIST_ID %}
+#   Penggunaan
+#     Cara menyematkan vídeo: {% arsip_video ID_VIDEO %}
+#     Cara menyematkan audio: {% arsip_audio ID_AUDIO %}
+#     Cara menyematkan daftar audio: {% arsip_daftar ID_DAFTAR_AUDIO %}
+#     Cara menyematkan gambar: {% arsip_gambar ID_GAMBAR/NAMA_BERKAS_GAMBAR|KETERANGAN BEBAS %}
 #
 ########################
-# CSS responsive
-# código a añadir en archivo css
+# CSS responsif
+# Bersifat opsional
 #
 # /* responsive videos */
 # .video figure {
@@ -135,7 +137,7 @@ module Jekyll
   
 end
 
-Liquid::Template.register_tag('archive_video', Jekyll::Archive_video)
-Liquid::Template.register_tag('archive_audio', Jekyll::Archive_audio)
-Liquid::Template.register_tag('archive_list', Jekyll::Archive_list)
-Liquid::Template.register_tag('archive_image', Jekyll::Archive_image)
+Liquid::Template.register_tag('arsip_video', Jekyll::Archive_video)
+Liquid::Template.register_tag('arsip_audio', Jekyll::Archive_audio)
+Liquid::Template.register_tag('arsip_daftar', Jekyll::Archive_list)
+Liquid::Template.register_tag('arsip_gambar', Jekyll::Archive_image)
