@@ -4,6 +4,7 @@ Jekyyl Arsip - Cara Mudah Sematkan Berkas dari Internet Archive di Jekyll
 Sebuah *plugin* untuk  Jekyll agar memudahkan penyematan berkas dari [Internet Archive](https://arvhive.org), seperti video, audio, daftar audio, atau bahkan gambar kedalam blog Jekyll milik Anda.
 
 > [jekyll-arsip](https://gitlab.com/SANREMEMBER/jekyll-arsip/) dibuat berdasarkan [jekyll-archive-org](https://github.com/tarteka/jekyll-archive-org) yang dibuat oleh [Tarteka](https://github.com/tarteka)
+
 > [jekyll-archive-org](https://github.com/tarteka/jekyll-archive-org) dibuat berdasarkan [jekyll-youtube](https://github.com/pibby/jekyll-youtube) oleh [Katie Harron](https://github.com/pibby)
 
 
