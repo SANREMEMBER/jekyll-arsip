@@ -134,12 +134,9 @@ module Jekyll
     # Create the HTML output for the image container with an optional caption
     # the 'captioned-image' css class controls the look and feel of the image
     # in my case the class centeres the image and poses maximum size restrictions
-    output =  "<div class=\"image\"><div>"
-    output += "<img src=\"#{archive}/#{img_path}\" alt=\"#{caption}\" title=\"#{caption}\">"
-    if( !caption.nil? && !caption.empty? )
-      output += "<p>#{caption}</p>"
-    end
-    output += "</div></div>"
+    output =  "<p>"
+    output += "<img src=\"#{archive}/#{img_path}\" alt=\"#{caption}\" title=\"#{caption}\" />"
+    output += "</p>"
 
     return output    
   end
