@@ -111,29 +111,16 @@ module Jekyll
     @input = input
   end
 
-  # Lookup allows access to the page/post variables through the tag context
-  # def lookup(context, name)
-  #  lookup = context
-  #  name.split(".").each { |value| lookup = lookup[value] }
-  #  lookup
-  # end
-
   def render(context)
 
-    # Accessing the page/site variable for the base url
     archive = "https://archive.org/download"
-
-    # Reading the tag parameter (using the pipe-split technique)
     input_split = split_params(@input)    
     img_path = input_split[0].strip.downcase
-    # Caption is an optional second parameter
+
     if( input_split.length > 1 )
       caption = input_split[1].strip
     end
 
-    # Create the HTML output for the image container with an optional caption
-    # the 'captioned-image' css class controls the look and feel of the image
-    # in my case the class centeres the image and poses maximum size restrictions
     output =  "<p>"
     output += "<img src=\"#{archive}/#{img_path}\" alt=\"#{caption}\" title=\"#{caption}\" />"
     output += "</p>"
