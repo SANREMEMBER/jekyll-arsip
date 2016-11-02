@@ -24,27 +24,17 @@ Di dalam berkas Markdown pada postingan Anda, tambahkan baris perintah berikut, 
 
 Contoh video, `{% arsip_video TimeLapseUsandoMEncoder %}` akan di *render* sebagai berikut:
 ```html
-<div class="video">
-  <figure>
-    <iframe width="800" height="480" src="//archive.org/embed/TimeLapseUsandoMEncoder" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-  </figure>
-</div>
+<iframe width="676" height="380" src="//archive.org/embed/TimeLapseUsandoMEncoder" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
 ```
 
 Contoh audio, `{% arsip_audio WanitaDiSurgaDapatApaAlUstadzMuhammadUmarAsSewed %}` akan di *render* sebagai berikut:
 
 ```html
-<div class="audio">
-  <iframe width="800" height="30" src="//archive.org/embed/killallradiojingle" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-</div>
+<iframe width="676" height="30" src="//archive.org/embed/WanitaDiSurgaDapatApaAlUstadzMuhammadUmarAsSewed" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
 ```
 
 Contoh daftar audio, `{% arsip_daftar KajianPetanahan20160424 %}` akan di *render* sebagai berikut:
 
 ```html
-<div class="video">
-  <figure>
-    <iframe width="800" height="300" src="//archive.org/embed/rsnlrckmtrkrsnlrckmtrk" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-  </figure>
-</div>
+<iframe width="676" height="300" src="//archive.org/embed/KajianPetanahan20160424" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
 ```
