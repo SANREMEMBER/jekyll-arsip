@@ -1,24 +1,27 @@
-Easy Archive.org Embed for Jekyll
+Jekyyl Arsip - Cara Mudah Sematkan Berkas dari Internet Archive di Jekyll
 ==============
 
-A plugin for Jekyll to easily embed [Archive.org](https://arvhive.org) videos, audios and audio lists into your site.
+Sebuah *plugin* untuk  Jekyll agar memudahkan penyematan berkas dari [Internet Archive](https://arvhive.org), seperti video, audio, daftar audio, atau bahkan gambar kedalam blog Jekyll milik Anda.
 
-> Based on [Easy Youtube Embed for Jekyll](https://github.com/pibby/jekyll-youtube) by [Katie Harron](https://pibby.com/)
+> [jekyll-arsip](https://gitlab.com/SANREMEMBER/jekyll-arsip/) dibuat berdasarkan [jekyll-archive-org](https://github.com/tarteka/jekyll-archive-org) yang dibuat oleh [Tarteka](https://github.com/tarteka)
+> [jekyll-archive-org](https://github.com/tarteka/jekyll-archive-org) dibuat berdasarkan [jekyll-youtube](https://github.com/pibby/jekyll-youtube) oleh [Katie Harron](https://github.com/pibby)
 
-## Demo
-[Jekyll Archive.org Plugin](https://tarteka.net/2015/11/insertar-audios-y-vdeos-de-archiveorg-en-jekyll/)
 
-## Installation Instructions
-Download the file `archive.rb` and place it in your `_plugins` folder of your Jekyll installation.
+## Contoh Penggunaan
+[Rilis Jekyll Arsip](https://sanremember.com/2016/11/02/jekyll-arsip-cara-mudah-sematkan-berkas-dari-archive-org-di-jekyll/)
 
-## Usage Instructions
-In your Markdown post, simply include the following command:
+## Petunjuk Instalasi
+Unduh berkas `arsip.rb` dan letakkan didalam direktori `_plugins` yang ada pada direktori blog Jekyll milik Anda, jika tidak ada, Anda bisa menambahkannya sendiri.
 
-+ `{% archive_video VIDEO_ID %}`
-+ `{% archive_audio AUDIO_ID %}`
-+ `{% archive_list AUDIO_LIST_ID %}`
+## Petunjuk Penggunaan
+Di dalam berkas Markdown pada postingan Anda, tambahkan baris perintah berikut, sesuai kebutuhan:
 
-Video example, `{% archive_video TimeLapseUsandoMEncoder %}` will render as:  
++ `{% arsip_video ID_VIDEO %}`
++ `{% arsip_audio ID_AUDIO %}`
++ `{% arsip_daftar ID_DAFTAR_AUDIO %}`
++ `{% arsip_gambar ID_GAMBAR/NAMA_BERKAS_GAMBAR|KETERANGAN BEBAS %}`
+
+Contoh video, `{% arsip_video TimeLapseUsandoMEncoder %}` akan di *render* sebagai berikut:
 ```html
 <div class="video">
   <figure>
@@ -27,7 +30,7 @@ Video example, `{% archive_video TimeLapseUsandoMEncoder %}` will render as:
 </div>
 ```
 
-Audio example, `{% archive_audio killallradiojingle %}` will render as:
+Contoh audio, `{% arsip_audio WanitaDiSurgaDapatApaAlUstadzMuhammadUmarAsSewed %}` akan di *render* sebagai berikut:
 
 ```html
 <div class="audio">
@@ -35,7 +38,7 @@ Audio example, `{% archive_audio killallradiojingle %}` will render as:
 </div>
 ```
 
-Audio List example, `{% archive_list rsnlrckmtrkrsnlrckmtrk %}` will render as:
+Contoh daftar audio, `{% arsip_daftar KajianPetanahan20160424 %}` akan di *render* sebagai berikut:
 
 ```html
 <div class="video">
@@ -47,7 +50,7 @@ Audio List example, `{% archive_list rsnlrckmtrkrsnlrckmtrk %}` will render as:
 
 ---
 
-If you're interested in the CSS, you can add it to your stylesheet and your videos will resize responsively for users on mobile devices.
+Jika Anda tertarik untuk menambahkan CSS, Anda dapat menambahkan gaya berikut, agar ukuran video menjadi responsif untuk perangkat seluler.
 
 ```css
 /* responsive videos */
