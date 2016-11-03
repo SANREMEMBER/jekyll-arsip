@@ -38,3 +38,10 @@ Contoh daftar audio, `{% arsip_daftar KajianPetanahan20160424 %}` akan di *rende
 ```html
 <iframe width="676" height="300" src="//archive.org/embed/KajianPetanahan20160424" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
 ```
+
+Contoh gambar, `{% arsip_gambar gambar-sanremember-1438-001/gambar-sanremember-1438-001.png|Beribadah Hanya Kepada Allah %}` akan di *render* sebagai berikut:
+
+```html
+<p>
+<img src="//archive.org/download/arsip_gambar gambar-sanremember-1438-001/gambar-sanremember-1438-001.png" alt="Beribadah Hanya Kepada Allah" title="Beribadah Hanya Kepada Allah" / ></p>
+```
