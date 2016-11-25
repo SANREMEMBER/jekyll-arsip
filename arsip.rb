@@ -12,30 +12,6 @@
 #     Cara menyematkan gambar: {% arsip_gambar ID_GAMBAR/NAMA_BERKAS_GAMBAR|KETERANGAN BEBAS %}
 #
 ########################
-# CSS responsif
-# Bersifat opsional
-#
-# /* responsive videos */
-# .video figure {
-#    position: relative;
-#    nowhitespace: afterproperty;
-#    padding-bottom: 56.25%;
-#    height: 0;
-#    overflow: hidden;
-# }
-#
-# .video iframe, .video object, .video embed {
-#    position: absolute;
-#    top: 0;
-#    left: 0;
-#    width: 100%;
-#    height: 100%;
-# }
-#
-# .audio iframe, .audio object, .audio embed {
-#    width: 100%;
-# }
-#
 
 module Jekyll
   class Archive_video < Liquid::Tag
