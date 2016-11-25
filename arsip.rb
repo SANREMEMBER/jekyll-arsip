@@ -52,7 +52,9 @@ module Jekyll
     end
 
     def render(context)
-      source = "<iframe width=\"676\" height=\"380\" src=\"//archive.org/embed/#{@url}\" frameborder=\"0\" allowfullscreen webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>"
+      source = "<center>"
+      source += "<iframe width=\"676\" height=\"380\" src=\"//archive.org/embed/#{@url}\" frameborder=\"0\" allowfullscreen webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>"
+      source += "</center>"
       source
     end
   end
@@ -71,7 +73,9 @@ module Jekyll
     end
 
     def render(context)
-      source = "<iframe width=\"676\" height=\"30\" src=\"//archive.org/embed/#{@url}\" frameborder=\"0\" allowfullscreen webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>"
+      source = "<center>"
+      source += "<iframe width=\"676\" height=\"30\" src=\"//archive.org/embed/#{@url}\" frameborder=\"0\" allowfullscreen webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>"
+      source += "</center>"
       source
     end
   end
@@ -90,7 +94,9 @@ module Jekyll
     end
 
     def render(context)
-      source = "<iframe width=\"676\" height=\"300\" src=\"//archive.org/embed/#{@url}&playlist=1\" frameborder=\"0\" allowfullscreen webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>"
+      source = "<center>"
+      source += "<iframe width=\"676\" height=\"300\" src=\"//archive.org/embed/#{@url}&playlist=1\" frameborder=\"0\" allowfullscreen webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\"></iframe>"
+      source += "</center>"
       source
     end
   end
